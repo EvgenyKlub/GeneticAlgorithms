@@ -26,7 +26,7 @@ public class SimpleGA {
 
         while (!binaryGA.isTerminated(population)) {
             // Print fittest individual from population
-            //System.out.println("Best solution: " + population.getFittestIndividual());
+            System.out.println("Best solution: " + population.getFittestIndividual());
 
             // Apply crossover
             population = binaryGA.crossover(population, SelectionMethod.TOURNAMENT_SELECTION);
